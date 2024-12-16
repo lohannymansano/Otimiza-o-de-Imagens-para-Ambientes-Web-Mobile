@@ -1,0 +1,348 @@
+/* Estilo geral do menu*/
+header {
+    background-color:aliceblue;
+    padding: 10px 0;
+  }
+  
+  /* Oculta o checkbox visualmente*/
+  .menu-toggle{
+    display: none;
+  }
+  
+  /* Ícone do menu hambúrguer */
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #d15656;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  nav {
+    background-color: #d15656;
+    padding: 10px 0;
+  }
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #424200;
+}
+
+.btn-login {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    background-color: #f4b6b6;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d15656;
+    box-shadow: 0px 8px 16px 0px rgba(1, 0, 1, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Menu hamburguer para telas menores */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: #000000;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .btn-login {
+        font-size: 16px;
+    }
+}
+
+.btn-login {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    background-color: #f4b6b6;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #d15656;
+}
+
+h1 {
+    background-color: #d15656;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.image {
+    margin: 10px;
+    max-width: 100%;
+    width: 45%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image {
+        width: 90%;
+    }
+}
+
+/* Estilo geral do footer */
+footer{
+    background-color: #d15656;
+    color:rgb(255, 255, 255);
+    padding: 40px 0;
+    font-family: 'Georgia', 'Times New Roman', 'Times, serif';   
+}
+
+.footer-section h4{
+  margin-bottom: 15px;
+  font-size: 18px;
+    color: #000000;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-section{
+    flex-basis: 23%;
+    margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  line-height: 14px;
+  text-align: justify;
+}
+
+.footer-section ul{
+    list-style-type: none;
+}
+
+.social-links a{
+    display: inline-block;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-links a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #000000;
+    font-size: 14px;
+}
+.footer-bottom p{
+    margin: 0;
+}
+/* Estilo para links */
+.footer-section ul {
+  list-style: none; /* Remove os marcadores da lista */
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6347; /* Cor ao passar o mouse */
+}
+
+/* Links das redes sociais */
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #000000; /* Cor ao passar o mouse */
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Alinha as seções verticalmente em telas menores */
+    .footer-container {
+        flex-direction: column;
+        align-items: center; /* Centraliza as seções */
+    }
+
+    .footer-section {
+        flex-basis: 100%; /* Cada seção ocupa toda a largura */
+        text-align: center; /* Texto centralizado */
+    }
+
+    .footer-section h4 {
+        font-size: 16px; /* Reduz tamanho da fonte */
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 14px; /* Reduz tamanho do texto */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajuste adicional para telas muito pequenas */
+    .footer-section h4 {
+        font-size: 14px;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 100;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) and (min-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
